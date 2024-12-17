@@ -471,7 +471,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
                   const SizedBox(width: 4),
                 ],
                 if (widget.showCountryFlag) ...[
-                  kIsWeb
+                  kIsWeb || _selectedCountry.code == 'SY'
                       ? Image.asset(
                           'assets/flags/${_selectedCountry.code.toLowerCase()}.png',
                           package: 'intl_phone_field',
